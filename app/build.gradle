@@ -16,7 +16,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-
+    repositories {
+        flatDir {
+//            dirs 'libs',"../../zmtfeedssdk/libs" //this way we can find the .aar file in libs folder
+            dirs project(':zmtfeedssdk').file('libs')
+        }
+    }
 }
 
 dependencies {
