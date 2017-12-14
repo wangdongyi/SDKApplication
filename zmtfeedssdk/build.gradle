@@ -4,7 +4,7 @@ apply plugin: 'com.jfrog.bintray'
 version = "1.0.0" // 版本号
 android {
     compileSdkVersion 26
-
+    resourcePrefix "WDY_" //资源标识前缀 随意填写
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 26
@@ -32,8 +32,9 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 }
-def siteUrl = 'https://github.com/smuyyh/BankCardFormat'    // Git项目主页
-def gitUrl = 'https://github.com/smuyyh/BankCardFormat.git' // Git仓库url
+def siteUrl = 'https://github.com/wangdongyi/SDKApplication'    // Git项目主页
+def gitUrl = 'https://github.com/wangdongyi/SDKApplication.git' // Git仓库url
+
 group = "com.zmt.feeds.sdk" // 一般为包名
 install {
     repositories.mavenInstaller {
