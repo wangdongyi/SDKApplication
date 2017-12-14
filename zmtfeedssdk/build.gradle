@@ -24,6 +24,7 @@ android {
             dirs 'libs',project(':zmtfeedssdk').file('libs')
         }
     }
+
 }
 
 dependencies {
@@ -33,7 +34,7 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.2.0'
     implementation 'com.google.code.gson:gson:2.8.0'
     implementation 'com.squareup.okhttp3:okhttp:3.8.0'
-    compile (name:'zmtfeeds',ext:'aar')
+    compile files('../zmtfeedssdk/libs/zmtfeeds.aar')
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
