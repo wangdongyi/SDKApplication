@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven' // 添加这个
+group "com.github.wangdongyi"
 android {
     compileSdkVersion 26
     resourcePrefix "WDY_" //资源标识前缀 随意填写
